@@ -1,0 +1,76 @@
+.hero-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center;
+    padding: 20px;
+    margin-top: -50px;
+    text-align: center; /* Center text content */
+}
+
+.hero-section h1 {
+    font-family: 'monda';
+    font-size: 3rem; /* Adjusted font size for mobile */
+    line-height: 1.2;
+    color: #6E9B40;
+    margin-top: 20px; /* Space between heading and image */
+
+}
+
+.hero-section img {
+    max-width: 80%; /* Make image responsive */
+    margin-top: 20px; /* Adjust margin for better spacing */
+    height: auto;
+}
+
+.hero-section p {
+    font-size: 1rem; /* Adjusted font size for mobile */
+    margin-top: 20px;
+    text-align: center; /* Center text content */
+    margin-left: 0; /* Remove specific left margin */
+    margin-right: 0; /* Remove specific right margin */
+    font-family: 'inter';
+}
+
+.hero-section .read-more-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: 2px solid #fff; /* White border */
+    border-color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 20px;
+
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adding transition for color change */
+}
+
+.hero-section .read-more-btn:hover {
+    background-color: #0056b3; /* Change background color on hover */
+    color: #fff; /* Keep text color on hover */
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        flex-direction: row; /* Revert to horizontal layout for larger screens */
+    }
+
+    .hero-section h1 {
+        font-size: 5.5rem; /* Revert to original font size for larger screens */
+    }
+
+    .hero-section img {
+        max-width: 40%; /* Revert to original max-width for larger screens */
+        margin-top: -150px; /* Revert to original margin-top for larger screens */
+    }
+
+    .hero-section p {
+        font-size: 1.3rem; /* Revert to original font size for larger screens */
+        text-align: center; /* Revert to original text alignment for larger screens */
+        margin-left: 450px; /* Revert to original margin-left for larger screens */
+    }
+
+    .hero-section .read-more-btn {
+        margin-left: 450px; /* Revert to original margin-left for larger screens */
+    }
+}

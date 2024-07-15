@@ -1,0 +1,36 @@
+
+.about-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .about-background {
+    background-image: url('C:\Users\Anurag Bose\OneDrive\Desktop\website adventurebuddy\adventurebuddy\src\assets\hiking.jpg'); /* Update the path to your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .about-content {
+    /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent background for better readability */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+  }
+  
+  .about-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  

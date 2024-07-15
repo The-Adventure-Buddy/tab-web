@@ -1,0 +1,132 @@
+.adventure-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    height: 500px;
+    position: relative; /* Needed for positioning the ::before pseudo-element */
+    margin-top: 10%;
+}
+
+.adventure-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('C:/Users/Anurag Bose/OneDrive/Desktop/website adventurebuddy/adventurebuddy/src/assets/Linkbg.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* Adjust the opacity value as needed */
+    z-index: 1; /* Ensure the background image stays behind the content */
+}
+
+.text-section {
+    margin-left: -250px;
+    z-index: 2; /* Ensure the text is above the background image */
+}
+
+.text-section p {
+    font-size: 2.5rem;
+    margin: 0;
+    margin-left: 0; /* Ensure no left margin */
+    text-align: left; /* Align text to the left */
+}
+
+.text-section h1 {
+    font-size: 5.5rem;
+    margin: 0;
+    margin-left: 0; /* Ensure no left margin */
+    font-weight: bold;
+    text-align: left; /* Align text to the left */
+}
+
+.image-section {
+    margin-top: 2rem;
+}
+
+.linktree-image {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    margin-left: 50%;
+    margin-top: 150px;
+}
+
+@media (max-width: 1200px) {
+    .text-section p {
+        font-size: 2rem;
+    }
+
+    .text-section h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .text-section {
+        margin-left: -150px;
+    }
+
+    .text-section p {
+        font-size: 1.75rem;
+    }
+
+    .text-section h1 {
+        font-size: 4rem;
+    }
+
+    .linktree-image {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .adventure-container {
+        height: auto; /* Adjust height for smaller screens */
+        margin-top: 5%;
+    }
+
+    .text-section {
+        margin-left: 0;
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .text-section p,
+    .text-section h1 {
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .text-section p {
+        font-size: 1.5rem;
+    }
+
+    .text-section h1 {
+        font-size: 3rem;
+    }
+
+    .linktree-image {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .adventure-container {
+        padding: 1rem;
+    }
+
+    .text-section p {
+        font-size: 1.25rem;
+    }
+
+    .text-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .linktree-image {
+        margin-top: 30px;
+    }
+}

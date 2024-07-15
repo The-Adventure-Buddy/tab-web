@@ -1,0 +1,73 @@
+.header {
+  position: relative;
+  width: 90%;
+  height: 700px;
+  margin: 100px auto; /* Centers the header horizontally */
+  /* transition: margin-top 1.8s ease; Add transition for smoother effect */
+  transition: top 1.5s ease-in-out, opacity 0.5s ease-in-out;
+  /* margin-top: -30px; */
+}
+
+.header.visible {
+  top: 0; /* Final position */
+  opacity: 1;
+  margin-top: 50px; /* Adjusted margin when navbar is visible */
+}
+
+.header-image {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 50px;
+  transition: opacity 5s ease-in-out;
+  margin-top: 300px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-image:nth-child(1) {
+  opacity: 1;
+}
+
+.header-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 40px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.header-image {
+  animation: fadeInOut 12s infinite;
+}
+
+@media (max-width: 768px) {
+  .header {
+      height: 200px;
+      margin-top: 300px; /* Default margin-top for mobile view */
+  }
+
+  .header.visible {
+      margin-top: 50px; /* Adjusted margin when navbar is visible on mobile */
+  }
+
+  .header-text {
+      bottom: 5px;
+      left: 5px;
+      font-size: 16px; /* Adjust font size for better readability */
+      padding: 5px 10px; /* Adjust padding for better spacing */
+  }
+
+  .header-image {
+      height: 100%; /* Ensure image takes full height */
+      opacity: 1; /* Ensure image is fully visible */
+      border-radius: 20px; /* Adjusted border radius for smaller screens */
+      top: 50%; /* Center vertically */
+      transform: translateX(-50%) translateY(-200%); 
+  }
+}

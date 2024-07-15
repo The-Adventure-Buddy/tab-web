@@ -1,0 +1,135 @@
+/* src/components/Navbar.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 200vh; /* Make the page tall enough to scroll */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    position: fixed;
+    top: -100px; /* Start position above the viewport */
+    left: 50%;
+    transform: translateX(-50%) translateY(40%);
+    transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.navbar.visible {
+    top: 0; /* Final position */
+    opacity: 1;
+    width: 55%;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the list items */
+    flex-wrap: wrap; /* Ensure items wrap in mobile view */
+
+}
+
+.nav-list.open {
+    display: block; /* Show the list on mobile when the menu is open */
+}
+
+.nav-item {
+    margin: 0 15px;
+    padding-top: 10px ;
+
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #6E9B40;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #007bff;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: green;
+    font-size: 16px;
+}
+
+.login-button {
+    background-color: #2e9cca;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 70px; /* Add margin for spacing */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        width: 50%; /* Adjust width for mobile view */
+        transform: translateX(-50%) translateY(10%); /* Adjust position for mobile view */
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none; /* Hide the list initially */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-list.open {
+        display: flex; /* Show the list when the menu is open */
+    }
+
+    .nav-item {
+        margin: 10px 0; /* Adjust margin for mobile view */
+    }
+
+    .login-button {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0; /* Adjust margin for mobile view */
+    }
+}
