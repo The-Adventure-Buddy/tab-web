@@ -1,7 +1,9 @@
 import React from 'react';
 import './About.css'; // Make sure to create and style this CSS file
 import Footer from '../components/Footer/Footer'
-
+import MissionVision  from "../components/MissionVision/MissionVision";
+import Services from "../components/Services/Services";
+import Teams from "../components/Teams/Team"
 const About = () => {
   return (
     <>
@@ -20,6 +22,9 @@ const About = () => {
         </div>
       </div>
     </div>
+      <MissionVision/>
+      <Services/>
+      <Teams/>
       <Footer/>
     </>
   );
