@@ -5,8 +5,8 @@
   margin: 100px auto; /* Centers the header horizontally */
   /* transition: margin-top 1.8s ease; Add transition for smoother effect */
   transition: top 1.5s ease-in-out, opacity 0.5s ease-in-out;
-
-  /* margin-top: -30px; */
+    /*background-color: red;*/
+   /*margin-top: -30px;*/
 }
 
 .header.visible {
@@ -16,12 +16,13 @@
 }
 
 .header-image {
+
   width: 100%;
   height: 50%;
   object-fit: cover;
   border-radius: 50px;
   transition: opacity 5s ease-in-out;
-  margin-top: 300px;
+  margin-top: 515px;
   opacity: 0;
   position: absolute;
   top: 0;

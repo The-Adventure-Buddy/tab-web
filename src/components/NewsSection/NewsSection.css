@@ -10,6 +10,9 @@
   position: relative; /* Make sure the container is positioned */
   z-index: 1; /* Ensure the container is on top */
   margin-top: 20%;
+  animation: fade 3s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 55%;
 }
 
 .news-container::before {
@@ -68,4 +71,14 @@
     color: #333;
     
   }
+@keyframes faded {
+  from {
+    opacity: 0;
+
+  }
+  to {
+    opacity: 1;
+
+  }
+}
   

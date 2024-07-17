@@ -6,6 +6,7 @@
     flex-wrap: wrap; /* Allow items to wrap if they don't fit in a row */
     background-color: #6E9B40;
     opacity: 75%;
+
 }
 
 .item {
@@ -15,8 +16,10 @@
     flex: 1 1 200px; /* Allow items to grow and shrink, minimum width of 200px */
     max-width: 300px; /* Set a maximum width for the items */
     color: white;
+    font-family: 'Monda';
 
 }
+
 
 @media (max-width: 768px) {
     .container {

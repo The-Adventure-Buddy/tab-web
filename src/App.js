@@ -7,8 +7,9 @@ import Navbar from './components/Navbar/Navbar'
 
 import About from './pages/About';
 import Home from './pages/Home'
-import Login from './pages/login'
+// import Login from './pages/login'
 import Contact from './pages/Contact'
+// import Advanceactivities from "./components/Advance Activities/Advanceactivities";
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           <Route path="" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-            <Route path="/login" element={<Login />} />
+            {/*<Route path="/activities/adventureactivities" element={<Advanceactivities />} />*/}
         </Routes>
       </Router>
     </div>

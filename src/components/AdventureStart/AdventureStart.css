@@ -7,6 +7,7 @@
     height: 500px;
     position: relative; /* Needed for positioning the ::before pseudo-element */
     margin-top: 10%;
+
 }
 
 .adventure-container::before {
@@ -54,6 +55,7 @@
     margin-left: 50%;
     margin-top: 150px;
 }
+
 
 @media (max-width: 1200px) {
     .text-section p {
