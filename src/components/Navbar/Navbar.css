@@ -1,5 +1,3 @@
-/* src/components/Navbar.css */
-
 body, html {
     margin: 0;
     padding: 0;
@@ -52,7 +50,7 @@ body, html {
     display: flex;
     justify-content: center; /* Center the list items */
     flex-wrap: wrap; /* Ensure items wrap in mobile view */
-
+    position: relative;
 }
 
 .nav-list.open {
@@ -61,8 +59,8 @@ body, html {
 
 .nav-item {
     margin: 0 15px;
-    padding-top: 10px ;
-
+    padding-top: 10px;
+    position: relative;
 }
 
 .nav-item a {
@@ -71,6 +69,7 @@ body, html {
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s ease;
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .nav-item a:hover {
@@ -92,6 +91,32 @@ body, html {
     font-size: 16px;
     cursor: pointer;
     margin-left: 70px; /* Add margin for spacing */
+}
+
+.nav-item .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    z-index: 1;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.nav-item.dropdown:hover .dropdown-menu,
+.nav-item.dropdown .dropdown-menu.open {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px 5px;
+    list-style: none;
+    margin-right: 50px;
+}
+
+.dropdown-menu li a {
+    color: #6E9B40;
 }
 
 @media (max-width: 768px) {

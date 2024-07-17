@@ -5,6 +5,7 @@
   margin: 100px auto; /* Centers the header horizontally */
   /* transition: margin-top 1.8s ease; Add transition for smoother effect */
   transition: top 1.5s ease-in-out, opacity 0.5s ease-in-out;
+
   /* margin-top: -30px; */
 }
 
@@ -26,6 +27,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+    background-color: yellow;
 }
 
 .header-image:nth-child(1) {

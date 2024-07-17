@@ -23,7 +23,7 @@
 }
 
 .hero-section p {
-    font-size: 1rem; /* Adjusted font size for mobile */
+    font-size: 2rem; /* Adjusted font size for mobile */
     margin-top: 20px;
     text-align: center; /* Center text content */
     margin-left: 0; /* Remove specific left margin */
@@ -45,10 +45,14 @@
     transition: background-color 0.3s ease, color 0.3s ease; /* Adding transition for color change */
 }
 
+
 .hero-section .read-more-btn:hover {
     background-color: #0056b3; /* Change background color on hover */
     color: #fff; /* Keep text color on hover */
 }
+
+
+
 
 @media (min-width: 768px) {
     .hero-section {
@@ -65,12 +69,14 @@
     }
 
     .hero-section p {
-        font-size: 1.3rem; /* Revert to original font size for larger screens */
+        font-size: 1.2rem; /* Revert to original font size for larger screens */
         text-align: center; /* Revert to original text alignment for larger screens */
         margin-left: 450px; /* Revert to original margin-left for larger screens */
     }
 
+
     .hero-section .read-more-btn {
         margin-left: 450px; /* Revert to original margin-left for larger screens */
     }
+
 }

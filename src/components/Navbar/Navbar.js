@@ -7,6 +7,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 const Navbar = () => {
     const [shrink, setShrink] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const handleScroll = () => {
         if (window.scrollY > 100) {
@@ -18,6 +19,10 @@ const Navbar = () => {
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
+    };
+
+    const toggleDropdown = () => {
+        setDropdownOpen(!dropdownOpen);
     };
 
     useEffect(() => {
@@ -36,7 +41,14 @@ const Navbar = () => {
                 <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
                     <li className="nav-item"><Link to="">Home</Link></li>
                     <li className="nav-item"><Link to="/about">About</Link></li>
-                    <li className="nav-item"><Link to="/activities">Activities</Link></li>
+                    <li className="nav-item dropdown" onClick={toggleDropdown}>
+                        <Link to="/activities">Activities</Link>
+                        <ul className={`dropdown-menu ${dropdownOpen ? 'open' : ''}`}>
+                            <li><Link to="/activities/schoolcamp">School Camp</Link></li>
+                            <li><Link to="/activities/outdoorcamp">Outdoor Camp</Link></li>
+                            <li><Link to="/activities/adventureactivities">Adventure Activities</Link></li>
+                        </ul>
+                    </li>
                     <li className="nav-item"><Link to="/register">Register</Link></li>
                     <li className="nav-item"><Link to="/safety">Safety</Link></li>
                     <li className="nav-item"><Link to="/contact">Contact</Link></li>

@@ -15,6 +15,7 @@
     flex: 1 1 200px; /* Allow items to grow and shrink, minimum width of 200px */
     max-width: 300px; /* Set a maximum width for the items */
     color: white;
+
 }
 
 @media (max-width: 768px) {
