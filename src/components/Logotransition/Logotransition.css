@@ -39,6 +39,7 @@ body, html {
     padding-top: 80px; /* Space for the fixed header */
 }
 
+
 /* Mobile view adjustments */
 @media (max-width: 768px) {
     .logo {

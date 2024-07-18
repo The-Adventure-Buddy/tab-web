@@ -6,9 +6,9 @@ import CFO from '../../assets/Atik.JPG'
 
 const TeamCard = ({ name, title, image, linkedin, className }) => {
     return (
-        <div className={`card ${className}`}>
-            <img src={image} alt={`${name}`} className="card-img" />
-            <div className="card-body">
+        <div className={`team ${className}`}>
+            <img src={image} alt={`${name}`} className="team-img" />
+            <div className="team-body">
                 <h3>{name}</h3>
                 <p>{title}</p>
                 <div className="social-links">
@@ -49,7 +49,7 @@ function App() {
     ];
 
     return (
-        <div className="App">
+        <div className="Team">
             <h1>Our Team</h1>
             <div className="team-container">
                 {teamMembers.map(member => (

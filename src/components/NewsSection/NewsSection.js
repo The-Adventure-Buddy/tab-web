@@ -10,7 +10,7 @@ import 'slick-carousel/slick/slick-theme.css';
 // import logo6 from '../../assets/accilives new logo.png'
 const NewsSection = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -24,13 +24,13 @@ const NewsSection = () => {
       <div className="slider-container">
         <Slider {...settings}>
           <div className="slide">
-            {/* <img src={logo4} alt="Slide 1" /> */}
+             {/*<img src={logo4} alt="Slide 1" />*/}
           </div>
           <div className="slide">
-            {/* <img src={logo5} alt="Slide 2" /> */}
+             {/*<img src={logo5} alt="Slide 2" />*/}
           </div>
           <div className="slide">
-            {/* <img src={logo6} alt="Slide 3" /> */}
+             {/*<img src={logo6} alt="Slide 3" />*/}
           </div>
         </Slider>
       </div>

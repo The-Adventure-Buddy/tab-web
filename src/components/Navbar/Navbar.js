@@ -21,7 +21,8 @@ const Navbar = () => {
         setMenuOpen(!menuOpen);
     };
 
-    const toggleDropdown = () => {
+    const toggleDropdown = (e) => {
+        e.stopPropagation();
         setDropdownOpen(!dropdownOpen);
     };
 
@@ -42,11 +43,11 @@ const Navbar = () => {
                     <li className="nav-item"><Link to="">Home</Link></li>
                     <li className="nav-item"><Link to="/about">About</Link></li>
                     <li className="nav-item dropdown" onClick={toggleDropdown}>
-                        <Link to="/activities">Activities</Link>
+                        <Link to="/">Activities</Link>
                         <ul className={`dropdown-menu ${dropdownOpen ? 'open' : ''}`}>
-                            <li><Link to="/activities/schoolcamp">School Camp</Link></li>
-                            <li><Link to="/activities/outdoorcamp">Outdoor Camp</Link></li>
-                            <li><Link to="/activities/adventureactivities">Adventure Activities</Link></li>
+                            <li><Link to="/activities/schoolcamp" onClick={(e) => e.stopPropagation()}>School Camp</Link></li>
+                            <li><Link to="/activities/outdoorcamp" onClick={(e) => e.stopPropagation()}>Outdoor Camp</Link></li>
+                            <li><Link to="/activities/adventureactivities" onClick={(e) => e.stopPropagation()}>Adventure Activities</Link></li>
                         </ul>
                     </li>
                     <li className="nav-item"><Link to="/register">Register</Link></li>

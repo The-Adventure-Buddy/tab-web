@@ -43,7 +43,7 @@ const Stats = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="count">
       <div className="item">
         <span ref={(el) => countersRef.current.push(el)} className="counter" data-target="30"></span>+ Schools
       </div>

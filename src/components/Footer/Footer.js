@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
           <div className="footer-section head-office">
             <h4>Head Office</h4>
-            <p>RESE Incubation Center, Nagar Nigam Parisar, Elite Chauraha, Civil Lines, Jhansi, Uttar Pradesh - 284001</p>
+            <p>RISE Incubation Center, Nagar Nigam Parisar, Elite Chauraha, Civil Lines, Jhansi, Uttar Pradesh - 284001</p>
             <h4>Connect With Us</h4>
             <p>9351891313, 8572575655</p>
             <p>contact@theadventurebuddy.in</p>

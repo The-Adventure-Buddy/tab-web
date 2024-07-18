@@ -1,4 +1,4 @@
-.Container {
+.Mission {
     width: 100%;
     padding: 20px;
     display: flex;
@@ -17,13 +17,13 @@ h2 {
     color: #6E6E6E;
 }
 
-.cards {
+.missions {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.card {
+.mission {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1.5);
     border-radius: 8px;
@@ -33,13 +33,13 @@ h2 {
     text-align: left;
 }
 
-.card h3 {
+.mission h3 {
     font-size: 18px;
     margin-bottom: 10px;
     color: #6E6E6E;
 }
 
-.card p {
+.mission p {
     font-size: 14px;
     color: #6E6E6E;
 }

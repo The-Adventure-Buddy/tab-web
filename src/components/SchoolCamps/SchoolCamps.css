@@ -1,0 +1,50 @@
+.school-camps-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.school-camp-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: black;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap; /* Allow the cards to wrap on smaller screens */
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    margin-bottom: 20px; /* Add margin-bottom to create spacing between rows */
+}
+
+.card h3 {
+    font-size: 1em;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        gap: 20px; /* Reduce gap between cards for smaller screens */
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px; /* Set a max width for the cards */
+        margin: 0 auto; /* Center the cards */
+    }
+}

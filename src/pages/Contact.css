@@ -9,7 +9,6 @@ body, html {
 
 /* Styling for the navbar */
 
-
 /* Container for the contact page content */
 .contact-container {
     display: flex;
@@ -81,4 +80,35 @@ body, html {
 
 .contact-info p {
     margin: 5px 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .contact-form, .contact-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        order: 1; /* Ensure contact form appears first */
+    }
+
+    .contact-image {
+        order: 2; /* Ensure contact image appears second */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 15px;
+    }
+
+    .contact-form button {
+        padding: 15px;
+    }
 }

@@ -24,7 +24,7 @@ const App = () => {
 
     return (
         <div>
-            <header className="headers">
+            <header className="header">
                 <div className={`logo ${shrinkLogo ? 'shrink' : ''}`}>
                     <img src={Logo} alt="Logo"/>
                 </div>

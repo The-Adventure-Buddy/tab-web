@@ -1,0 +1,39 @@
+.schoolcard {
+    width: 20%;
+    height: 300px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.schoolcard h3 {
+    font-size: 1em;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .schoolcard {
+        width: 80%;
+        height: 200px; /* Adjust height to auto for better content fitting */
+        margin: 10px auto; /* Center the card and add margin */
+    }
+
+    .schoolcard h3 {
+        font-size: 1.2em; /* Adjust font size for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .schoolcard {
+        width: 100%;
+        height: 200px; /* Ensure full width for very small screens */
+        margin: 10px 0; /* Adjust margin for very small screens */
+    }
+
+    .schoolcard h3 {
+        font-size: 1.4em; /* Increase font size further for better readability */
+    }
+}
