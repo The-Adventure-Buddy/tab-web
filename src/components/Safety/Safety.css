@@ -36,6 +36,12 @@ header h1 {
   height: auto;
   margin-bottom: 1rem;
 }
+#img{
+  /*margin-right: 100px;*/
+}
+.box1{
+  /*border-right: 2px dotted black; !* Dotted border on the right *!*/
+}
 
 
 @media (max-width: 1200px) {

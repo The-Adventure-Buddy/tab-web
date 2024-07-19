@@ -34,7 +34,7 @@ const NewsSection = () => {
           </div>
         </Slider>
       </div>
-      <div className="text-section">
+      <div className="text-sections">
         <p>What's Happening</p>
         <h1><span className='news'>News</span><br/><span className='articles'>Articles</span></h1>
       </div>

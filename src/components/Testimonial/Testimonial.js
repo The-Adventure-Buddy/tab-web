@@ -3,9 +3,9 @@ import Slider from 'react-slick';
 import './Testmonial.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import logo4 from '../../assets/professionaltrainer.png'
-import logo5 from '../../assets/Certified Equipment.png'
-import logo6 from '../../assets/accilives new logo.png'
+// import logo4 from '../../assets/professionaltrainer.png'
+// import logo5 from '../../assets/Certified Equipment.png'
+// import logo6 from '../../assets/accilives new logo.png'
 function App() {
   const settings = {
     dots: false,
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="new-container">
-      <div className="text-content">
+      <div className="text-contents">
         <p>What</p>
         <p>People</p>
         <p>Say</p>
@@ -27,13 +27,13 @@ function App() {
       <div className="image-slider">
         <Slider {...settings}>
           <div>
-             <img src={logo4} alt="Slide 1" />
+             {/*<img src={logo4} alt="Slide 1" />*/}
           </div>
           <div>
-             <img src={logo5} alt="Slide 2" />
+             {/*<img src={logo5} alt="Slide 2" />*/}
           </div>
           <div>
-             <img src={logo6} alt="Slide 3" />
+             {/*<img src={logo6} alt="Slide 3" />*/}
           </div>
         </Slider>
       </div>

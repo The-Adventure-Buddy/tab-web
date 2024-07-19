@@ -10,12 +10,12 @@
     margin-top: 10%;
 }
 
-.text-content {
+.text-contents p {
     display: flex;
     flex-direction: column;
     font-size: 3rem;
     font-weight: bold;
-    line-height: 0.2;
+    line-height: 1.2;
     justify-content: center;
     text-align: center;
     margin-left: 100px;
@@ -52,7 +52,7 @@
         margin-top: 5%;
     }
 
-    .text-content {
+    .text-contents {
         font-size: 1.5rem;
         margin-left: 0;
         text-align: center;

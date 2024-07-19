@@ -29,21 +29,49 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    width: 80%;
+    padding: 20px;
 }
 
 .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: white;
     padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     text-align: center;
 }
 
-.middle {
-    grid-column: span 3;
+.risk-assessment {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
-/* Responsive adjustments */
+
+.emergency-preparedness {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.your-responsibility {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.weather-monitoring {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.safety-briefings {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+}
+

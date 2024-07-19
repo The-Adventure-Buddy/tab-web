@@ -3,7 +3,7 @@
     flex-direction: column; /* Stack items vertically on mobile */
     align-items: center;
     padding: 20px;
-    margin-top: -50px;
+    margin-top: -800px;
     text-align: center; /* Center text content */
 
 }
@@ -60,6 +60,7 @@
 @media (min-width: 768px) {
     .hero-section {
         flex-direction: row; /* Revert to horizontal layout for larger screens */
+
     }
 
     .hero-section h1 {

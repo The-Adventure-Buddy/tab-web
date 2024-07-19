@@ -15,19 +15,19 @@ function Safety() {
         </h1>
       </header>
       <div className="content">
-        <div className="box">
+        <div className="box1">
           <img src={logo1} alt="Professional Trainer" className="image" />
           {/* <h2>Professional Trainer</h2> */}
         </div>
-        <div className="box">
+        <div className="box1">
         {/* <h2>Assured Insurance</h2> */}
         <p>Powered by</p>
-          <img src={logo2} alt="Assured Insurance" className="image" />
-          {/* <img src= alt="ACCILIVES" className="image" /> */}
+          <img src={logo2} alt="Assured Insurance" className="image" id="img" />
+           {/*<img src= alt="ACCILIVES" className="image" />*/}
         </div>
         <div className="box">
           <img src={logo3} alt="Certified Equipment" className="image" />
-          {/* <h2>Certified Equipments</h2> */}
+           {/*<h2>Certified Equipments</h2>*/}
         </div>
       </div>
     </div>

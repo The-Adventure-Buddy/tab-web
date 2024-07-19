@@ -1,5 +1,4 @@
 import React from 'react'
-// import Navbar from '../components/Navbar/Navbar'
 import AdventureSection from '../components/AdventureSection/AdventureSection';
 import NewsSection from '../components/NewsSection/NewsSection';
 import Testimonial from '../components/Testimonial/Testimonial';
@@ -15,7 +14,6 @@ import Logotransition from '../components/Logotransition/Logotransition';
         return (
             <div>
                 <Logotransition />
-
                 <Header />
                 <HeroSection />
                 <Count />

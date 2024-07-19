@@ -28,12 +28,13 @@
 
 .hero-content {
   margin-top: 30px;
-  color: #333;
   box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .hero-content h2 {
   font-size: 2.5rem; /* Adjust size for readability */
+  color: #333;
+  margin-left: 200px;
   margin-bottom: 5px;
   font-family: 'Monda';
 
@@ -42,6 +43,7 @@
 .hero-content h1 {
   font-size: 6rem; /* Adjust size for readability */
   margin: 0;
+  color: black;
   font-family: 'Monda';
 }
 
@@ -110,6 +112,10 @@
 
   .hero-content h1 {
     font-size: 2.5rem; /* Adjust size for smaller screens */
+  }
+  .hero-content h2{
+    margin-left: 5px;
+    color: #333;
   }
 
   .activities {
