@@ -1,3 +1,4 @@
+/* General styles */
 .news-container {
   display: flex;
   align-items: center;
@@ -6,7 +7,7 @@
   height: 100vh;
   background-color: #f9f9f9;
   position: relative;
-  z-index:  1;
+  z-index: 1;
   margin-top: 20%;
 }
 
@@ -51,7 +52,6 @@
 .text-sections {
   width: 50%;
   text-align: left;
-
 }
 
 .text-sections p {
@@ -96,7 +96,6 @@
 
   .text-sections h1 {
     font-size: 2.5rem;
-
   }
 
   .slider-container {
@@ -112,5 +111,34 @@
   .articles {
     margin-left: 0;
     text-align: center;
+  }
+}
+
+/* Additional responsive design for very small screens */
+@media (max-width: 480px) {
+  .news-container {
+    padding: 1rem;
+    margin-top: 5%;
+  }
+
+  .text-sections p {
+    font-size: 1.2rem;
+  }
+
+  .text-sections h1 {
+    font-size: 2rem;
+  }
+
+  .slider-container {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .slider-container .slide img {
+    height: auto; /* Ensure images maintain aspect ratio */
+  }
+
+  .news {
+    font-size: 4rem;
   }
 }

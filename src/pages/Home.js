@@ -10,6 +10,7 @@ import Safety from  '../components/Safety/Safety';
 import AdventureStart from '../components/AdventureStart/AdventureStart';
 import Activities from '../components/ActivitiesSection/ActivitiesSection';
 import Logotransition from '../components/Logotransition/Logotransition';
+import BrandSlider from "../components/BrandSlider/BrandSlider";
     function Home() {
         return (
             <div>
@@ -23,6 +24,7 @@ import Logotransition from '../components/Logotransition/Logotransition';
                 <AdventureSection />
                 <NewsSection />
                 <Testimonial />
+                <BrandSlider/>
                 <Footer />
             </div>
         )
