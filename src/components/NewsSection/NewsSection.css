@@ -8,7 +8,7 @@
   background-color: #f9f9f9;
   position: relative;
   z-index: 1;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .news-container::before {
@@ -18,7 +18,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('C:/Users/Anurag Bose/OneDrive/Desktop/website adventurebuddy/tab-web/src/assets/newspaper.png');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/adventurebuddy-tab-web.appspot.com/o/newspaper.png?alt=media&token=6d75f449-383f-48a6-b408-121cf539b6ac');
   background-size: cover;
   background-position: center;
   opacity: 0.2;
@@ -42,64 +42,108 @@
 }
 
 .news {
-  font-size: 10.5rem;
+  font-size: 15.5rem;
 }
 
 .articles {
-  margin-left: 220px;
+  margin-left: 300px;
 }
 
-.text-sections {
+.text-section {
   width: 50%;
   text-align: left;
 }
 
-.text-sections p {
-  font-size: 2.8rem;
+.text-section p {
+  font-size: 3.7rem;
   margin: 0;
   color: #777;
   font-family: 'Monda';
+  margin-left: 120px;
 }
 
-.text-sections h1 {
-  font-size: 3.5rem;
+.text-section h1 {
+  font-size: 4.5rem;
   margin: 0;
   font-weight: bold;
   color: black;
   font-family: 'Monda';
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 1024px) {
   .news-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 1.5rem;
     height: auto;
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
-  .text-sections, .slider-container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .text-sections {
+  .text-section {
+    width: 90%;
     text-align: center;
     margin-bottom: 1rem;
   }
 
-  .text-sections p {
-    font-size: 1.5rem;
+  .text-section p {
+    font-size: 2.5rem;
+    margin-left: 0;
   }
 
-  .text-sections h1 {
+  .text-section h1 {
+    font-size: 3rem;
+  }
+
+  .slider-container {
+    width: 60%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .news {
+    font-size: 8rem;
+    text-align: center;
+  }
+
+  .articles {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 768px) {
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: auto;
+    margin-top: 5%;
+  }
+
+  .text-section {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .text-section p {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  .text-section h1 {
     font-size: 2.5rem;
   }
 
   .slider-container {
+    width: 80%;
     height: auto;
+    margin-left: 0;
     margin-top: 20px;
   }
 
@@ -114,24 +158,33 @@
   }
 }
 
-/* Additional responsive design for very small screens */
+/* Responsive design for very small screens */
 @media (max-width: 480px) {
   .news-container {
-    padding: 1rem;
-    margin-top: 5%;
+    padding: 0.5rem;
+    margin-top: 2%;
   }
 
-  .text-sections p {
+  .text-section {
+    width: 95%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .text-section p {
     font-size: 1.2rem;
+    margin-left: 0;
+    padding: 0 0.5rem;
   }
 
-  .text-sections h1 {
+  .text-section h1 {
     font-size: 2rem;
   }
 
   .slider-container {
-    margin-top: 10px;
     width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
   }
 
   .slider-container .slide img {
@@ -140,5 +193,6 @@
 
   .news {
     font-size: 4rem;
+    text-align: center;
   }
 }

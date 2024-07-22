@@ -27,7 +27,7 @@ body, html {
 }
 
 .contact-form h2 {
-    color: #0096db;
+    color: #2e9cca;
 }
 
 .contact-form p {
@@ -45,13 +45,13 @@ body, html {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 50px;
-    border-color: #0096db;
+    border-color: #2e9cca;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .contact-form button {
     padding: 10px;
-    background-color: #0096db;
+    background-color: #2e9cca;
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -59,7 +59,7 @@ body, html {
 }
 
 .contact-form button:hover {
-    background-color: #007bb5;
+    background-color: #2e9cca;
 }
 
 /* Styling for the contact image and info */

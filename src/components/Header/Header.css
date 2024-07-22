@@ -52,7 +52,7 @@
 @media (max-width: 768px) {
   .header {
       height: 200px;
-      margin-top: 300px; /* Default margin-top for mobile view */
+      margin-top: 800px; /* Default margin-top for mobile view */
   }
 
   .header.visible {
@@ -72,6 +72,6 @@
       border-radius: 20px; /* Adjusted border radius for smaller screens */
       top: 50%; /* Center vertically */
       transform: translateX(-50%) translateY(-200%);
-      margin-top: 300px;
+      margin-top: -700px;
   }
 }

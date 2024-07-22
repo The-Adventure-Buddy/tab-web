@@ -1,3 +1,4 @@
+/* General styles */
 .new-container {
     display: flex;
     align-items: center;
@@ -8,6 +9,7 @@
     background-size: cover;
     background-position: center;
     margin-top: 10%;
+    position: relative; /* Ensure it works well with absolute positioning inside */
 }
 
 .text-contents p {
@@ -35,30 +37,57 @@
     margin: auto;
     max-width: 100%;
     max-height: 100%;
-
 }
 
 .slick-dots {
     bottom: -30px;
 }
 
-/* Responsive design for smaller screens */
+/* Responsive design for large tablets and smaller screens */
+@media (max-width: 1024px) {
+    .new-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        height: auto;
+        margin-top: 5%;
+    }
+
+    .text-contents p {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 1rem;
+        order: 1;
+    }
+
+    .image-slider {
+        width: 70%;
+        height: auto;
+        margin-right: 0;
+        margin-top: 20px;
+        order: 2;
+    }
+}
+
+/* Responsive design for tablets and smaller screens */
 @media (max-width: 768px) {
     .new-container {
         flex-direction: column;
-        align-items: center; /* Center align the items horizontally */
+        align-items: center;
         justify-content: center;
         padding: 1rem;
         height: auto;
         margin-top: 5%;
     }
 
-    .text-contents {
+    .text-contents p {
         font-size: 1.5rem;
         margin-left: 0;
         text-align: center;
         margin-bottom: 1rem;
-        order: 1; /* Ensure text-content appears first */
+        order: 1;
     }
 
     .image-slider {
@@ -66,6 +95,26 @@
         height: auto;
         margin-right: 0;
         margin-top: 20px;
-        order: 2; /* Ensure image-slider appears second */
+        order: 2;
+    }
+}
+
+/* Responsive design for very small screens */
+@media (max-width: 480px) {
+    .new-container {
+        padding: 0.5rem;
+        margin-top: 2%;
+    }
+
+    .text-contents p {
+        font-size: 1.2rem;
+        margin-left: 0;
+        padding: 0 0.5rem; /* Add padding for better spacing */
+    }
+
+    .image-slider {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 10px;
     }
 }

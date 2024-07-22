@@ -20,11 +20,11 @@ const ContactPage = () => {
             </div>
             <div className="contact-image">
                 <img src={Contactimg} alt="Contact" />
-                <div className="contact-info">
-                    <p>RISE Incubation Center, Nagri Nigam Premises, Elite Chauraha, Jhansi, Uttar Pradesh - 284001</p>
-                    <p>+919518619813, 8827531565</p>
-                    <p>connect@theadventurebuddy.in</p>
-                </div>
+                {/*<div className="contact-info">*/}
+                {/*    <p>RISE Incubation Center, Nagri Nigam Premises, Elite Chauraha, Jhansi, Uttar Pradesh - 284001</p>*/}
+                {/*    <p>+919518619813, 8827531565</p>*/}
+                {/*    <p>connect@theadventurebuddy.in</p>*/}
+                {/*</div>*/}
             </div>
 
         </div>

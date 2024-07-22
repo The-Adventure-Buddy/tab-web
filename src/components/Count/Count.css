@@ -5,31 +5,104 @@
     padding: 20px;
     flex-wrap: wrap; /* Allow items to wrap if they don't fit in a row */
     background-color: #6E9B40;
-    opacity: 75%;
-
+    margin-top: -400px;
 }
 
 .item {
-    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space between children */
+    align-items: center; /* Center align children horizontally */
+    margin: 10px 50px;
     text-align: center;
-    font-size: 55px;
-    flex: 1 1 200px; /* Allow items to grow and shrink, minimum width of 200px */
-    max-width: 300px; /* Set a maximum width for the items */
+    font-size: 50px;
+    max-width: 180px; /* Set a maximum width for the items */
     color: white;
     font-family: 'Monda';
-
 }
 
+.number {
+    font-size: 50px;
+    margin-bottom: 10px; /* Add some space between the number and the text */
+}
+
+.text {
+    font-size: 20px; /* Adjust the font size for the text as needed */
+}
 
 @media (max-width: 768px) {
-    .container {
+    .count {
         flex-direction: column;
         text-align: center;
         padding: 10px; /* Adjust padding for smaller screens */
+        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .item {
         margin: 5px 0;
         font-size: 45px; /* Adjust font size for better readability on smaller screens */
     }
+
+    .number {
+        font-size: 45px;
+    }
+
+    .text {
+        font-size: 18px; /* Adjust the font size for better readability on smaller screens */
+    }
 }
+
+
+
+
+
+/*.count {*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    align-items: center;*/
+/*    padding: 10px;*/
+/*    flex-wrap: wrap; !* Allow items to wrap if they don't fit in a row *!*/
+/*    background-color: #6E9B40;*/
+/*    margin-top: 50px;*/
+/*    !*opacity: 75%;*!*/
+
+/*}*/
+
+/*.item {*/
+/*    margin: 10px 50px;*/
+/*    text-align: center;*/
+/*    font-size: 45px;*/
+/*    max-width: 150px; !* Set a maximum width for the items *!*/
+/*    color: white;*/
+/*    font-family: 'Monda';*/
+/*}*/
+/*!*.item {*!*/
+/*!*    display: flex;*!*/
+/*!*    flex-direction: column;*!*/
+/*!*    justify-content: space-between; !* Distribute space between children *!*!*/
+/*!*    align-items: center; !* Center align children horizontally *!*!*/
+/*!*    margin: 20px 0;*!*/
+/*!*    text-align: center;*!*/
+/*!*    font-size: 49px;*!*/
+/*!*    flex: 1 1 300px; !* Allow items to grow and shrink, minimum width of 200px *!*!*/
+/*!*    max-width: 300px; !* Set a maximum width for the items *!*!*/
+/*!*    color: white;*!*/
+/*!*    font-family: 'Monda';*!*/
+/*!*    padding: 10px; !* Optional: add some padding for better spacing *!*!*/
+/*!*    box-sizing: border-box; !* Include padding and border in the element's total width and height *!*!*/
+/*!*}*!*/
+
+
+/*@media (max-width: 768px) {*/
+/*    .container {*/
+/*        flex-direction: column;*/
+/*        text-align: center;*/
+/*        padding: 10px; !* Adjust padding for smaller screens *!*/
+/*    }*/
+
+/*    .item {*/
+/*        margin: 5px 0;*/
+/*        font-size: 45px; !* Adjust font size for better readability on smaller screens *!*/
+/*    }*/
+/*}*/

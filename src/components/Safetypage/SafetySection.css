@@ -1,77 +1,51 @@
+/* SafetyCards.css */
 
 .safety-container {
-    padding: 2rem;
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-
-.safety-header {
-    text-align: left;
-    margin-bottom: 2rem;
-}
-
-.safety-header h1 {
-    font-size: 2.5rem;
-    color: gray;
-}
-
-.safety-header p {
-    font-size: 1rem;
-    margin: 1rem 0;
-}
-
-.safety-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+.safety-content p{
+    font-size: 1.2rem;
+    font-family: 'Monda';
+    margin-right: 10%;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+.headline {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Monda';
+}
+safety-content p{
+    font-size: 8rem;
+}
+.headline {
+    font-size: 8rem; /* Adjusted to fit the design better */
+    color: black;
+    margin-right: 20px;
+    max-width: 60%; /* Limit the width of the headline */
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
+.safety-highlight {
+    color: #ff0000;
+    margin-left: 80px;
 }
 
-.risk-assessment {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+.safety-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-20%); /* Adjust as needed */
 }
 
-.emergency-preparedness {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-}
-
-.your-responsibility {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-.weather-monitoring {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-}
-
-.safety-briefings {
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
-}
-
-h2 {
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 14px;
+.safety-image img {
+    margin-top: 150px;
+    width: 100vh; /* Adjust width as needed */
+    height: 100vh; /* Maintain aspect ratio */
 }
 

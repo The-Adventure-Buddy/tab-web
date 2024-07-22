@@ -5,7 +5,7 @@
   margin-top: 80px;
   text-align: center;
   /*padding: 20px;*/
-  background: #f9f9f9 url('C:/Users/Anurag Bose/OneDrive/Desktop/website adventurebuddy/tab-web/src/assets/bg.png') center;
+  background: #f9f9f9 url('https://firebasestorage.googleapis.com/v0/b/adventurebuddy-tab-web.appspot.com/o/bg.png?alt=media&token=4a893358-90d2-45e0-8e0e-83e6ea5e12ad') center;
   /*background-size: cover; !* Ensure background image covers entire container *!*/
   /*overflow-y: hidden; !* Prevent horizontal scrolling *!*/
 }
@@ -22,7 +22,7 @@
 
 .hero-image {
   width: 100% ; /* Take full width on mobile */
-  max-width: 300px; /* Limit width for larger screens */
+  max-width: 400px; /* Limit width for larger screens */
   margin: 0 auto; /* Center align */
 }
 
@@ -44,6 +44,7 @@
   font-size: 6rem; /* Adjust size for readability */
   margin: 0;
   color: black;
+
   font-family: 'Monda';
 }
 

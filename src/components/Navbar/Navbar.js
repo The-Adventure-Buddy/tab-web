@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -40,21 +39,21 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
                 </button>
                 <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
-                    <li className="nav-item"><Link to="">Home</Link></li>
-                    <li className="nav-item"><Link to="/about">About</Link></li>
+                    <li className="nav-item"><a href="/">Home</a></li>
+                    <li className="nav-item"><a href="/about">About</a></li>
                     <li className="nav-item dropdown" onClick={toggleDropdown}>
-                        <Link to="/">Activities</Link>
+                        <a href="/">Activities</a>
                         <ul className={`dropdown-menu ${dropdownOpen ? 'open' : ''}`}>
-                            <li><Link to="/activities/schoolcamp" onClick={(e) => e.stopPropagation()}>Epic Explorer</Link></li>
-                            <li><Link to="/activities/outdoorcamp" onClick={(e) => e.stopPropagation()}>Rising Wandener</Link></li>
-                            <li><Link to="/activities/adventureactivities" onClick={(e) => e.stopPropagation()}>Master Pioneer</Link></li>
+                            <li><a href="/activities/schoolcamp" onClick={(e) => e.stopPropagation()}>Epic Explorer</a></li>
+                            <li><a href="/activities/outdoorcamp" onClick={(e) => e.stopPropagation()}>Rising Wanderer</a></li>
+                            <li><a href="/activities/adventureactivities" onClick={(e) => e.stopPropagation()}>Master Pioneer</a></li>
                         </ul>
                     </li>
-                    <li className="nav-item"><Link to="/register">Register</Link></li>
-                    <li className="nav-item"><Link to="/safety">Safety</Link></li>
-                    <li className="nav-item"><Link to="/contact">Contact</Link></li>
+                    <li className="nav-item"><a href="/register">Register</a></li>
+                    <li className="nav-item"><a href="/safety">Safety</a></li>
+                    <li className="nav-item"><a href="/contact">Contact</a></li>
                     <li className="nav-item">
-                        <Link to={'/login'}><button className="login-button">Log In</button></Link>
+                        <a href="/login"><button className="login-button">Log In</button></a>
                     </li>
                 </ul>
             </div>

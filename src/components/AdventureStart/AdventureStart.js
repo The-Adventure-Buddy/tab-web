@@ -5,7 +5,7 @@ import linktreeImg from '../../assets/Linktree.png'; // Adjust the path as neces
 const AdventureStart = () => {
     return (
         <div className="adventure-container">
-            <div className="text-section">
+            <div className="Text-section">
                 <p>let’s begin</p>
                 <h1>The Adventure...</h1>
             </div>
