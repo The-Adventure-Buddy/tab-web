@@ -24,7 +24,7 @@ body, html {
 .navbar.visible {
     top: 0; /* Final position */
     opacity: 1;
-    width: 55%;
+    width: 65%;
 }
 
 .navbar-container {
@@ -45,6 +45,7 @@ body, html {
 
 .nav-list {
     list-style: none;
+    gap: 20px;
     margin: 0;
     padding: 0;
     display: flex;

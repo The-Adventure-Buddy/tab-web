@@ -40,20 +40,25 @@ const Navbar = () => {
                 </button>
                 <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
                     <li className="nav-item"><a href="/">Home</a></li>
-                    <li className="nav-item"><a href="/about">About</a></li>
                     <li className="nav-item dropdown" onClick={toggleDropdown}>
                         <a href="/">Activities</a>
                         <ul className={`dropdown-menu ${dropdownOpen ? 'open' : ''}`}>
-                            <li><a href="/activities/schoolcamp" onClick={(e) => e.stopPropagation()}>Epic Explorer</a></li>
-                            <li><a href="/activities/outdoorcamp" onClick={(e) => e.stopPropagation()}>Rising Wanderer</a></li>
-                            <li><a href="/activities/adventureactivities" onClick={(e) => e.stopPropagation()}>Master Pioneer</a></li>
+                            <li><a href="/activities/schoolcamp" onClick={(e) => e.stopPropagation()}>Epic Explorer</a>
+                                               </li>
+                            <li><a href=" /activities/adventureactivities " onClick={(e) => e.stopPropagation()}>Rising
+                                Wanderer</a></li>
+                            <li><a href="/activities/outdoorcamp" onClick={(e) => e.stopPropagation()}>Master
+                                Pioneer</a></li>
                         </ul>
                     </li>
                     <li className="nav-item"><a href="/register">Register</a></li>
                     <li className="nav-item"><a href="/safety">Safety</a></li>
+                    <li className="nav-item"><a href="/gallary">Gallary</a></li>
                     <li className="nav-item"><a href="/contact">Contact</a></li>
                     <li className="nav-item">
-                        <a href="/login"><button className="login-button">Log In</button></a>
+                        <a href="/login">
+                            <button className="login-button">Log In</button>
+                        </a>
                     </li>
                 </ul>
             </div>
