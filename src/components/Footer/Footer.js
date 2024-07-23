@@ -18,22 +18,26 @@ const Footer = () => {
               <li><a href="/terms-conditions">Terms & Condition</a></li>
             </ul>
             <div className="social-icons">
-              <a href="https://facebook.com"><FontAwesomeIcon icon={faFacebookF} /></a>
-              <a href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} /></a>
-              <a href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} /></a>
-              <a href="https://linkedin.com"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+              <a href="https://www.facebook.com/adventurebuddy01"><FontAwesomeIcon icon={faFacebookF} /></a>
+              <a href="https://x.com/adventurebuddy1"><FontAwesomeIcon icon={faTwitter} /></a>
+              <a href="https://www.instagram.com/adventurebuddy01/"><FontAwesomeIcon icon={faInstagram} /></a>
+              <a href="https://www.linkedin.com/company/adventurebuddy01/"><FontAwesomeIcon icon={faLinkedinIn} /></a>
             </div>
           </div>
           <div className="footer-section quick-links">
             <h4>Quick Links</h4>
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="/activities">Activities</a></li>
               <li><a href="/register">Register</a></li>
               <li><a href="/safety">Safety</a></li>
               <li><a href="/gallery">Gallery</a></li>
               <li><a href="/contact">Contact Us</a></li>
               <li><a href="/about">About Us</a></li>
+              <li><a href="/activities/schoolcamp">Epic Explorer</a></li>
+              <li><a href="/activities/outdoorcamp">Rising Wanderer</a></li>
+              <li><a href="/activities/adventureactivities">Master Pioneer</a></li>
+
+
             </ul>
           </div>
           <div className="footer-section head-office">

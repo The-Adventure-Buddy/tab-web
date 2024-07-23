@@ -7,12 +7,12 @@ import Navbar from './components/Navbar/Navbar'
 
 import About from './pages/About';
 import Home from './pages/Home'
-// import Login from './pages/login'
 import Contact from './pages/Contact'
 import Advanceactivities from "./components/Advance Activities/Advanceactivities";
 import SchoolCamps  from "./components/SchoolCamps/SchoolCamps";
 import Outdoorcamp from './components/Outdoorcamp/outdoor'
 import SafetySection from "./components/Safetypage/SafetySection";
+import Registerform from "./pages/Registerform";
 function App() {
   return (
     <div className="App">
@@ -27,6 +27,7 @@ function App() {
           <Route path="/activities/outdoorcamp" element={<Outdoorcamp />} />
             <Route path="/activities/adventureactivities" element={<Advanceactivities />} />
           <Route path="/safety" element={<SafetySection />} />
+          <Route path="/register" element={<Registerform />} />
 
         </Routes>
       </Router>

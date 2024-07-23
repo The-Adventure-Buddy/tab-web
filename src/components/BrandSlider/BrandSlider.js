@@ -9,6 +9,7 @@ import logo3 from '../../assets/CAMP-logo.png';
 import logo4 from '../../assets/CAMP-SAFETY.png';
 import logo5 from '../../assets/Petzl.png';
 import logo6 from '../../assets/Ministry of Tourism.png';
+import logo7 from '../../assets/icf-logo.png'
 import logo8 from '../../assets/ATOAI.png';
 import logo9 from '../../assets/AdventureTrvel.png';
 
@@ -54,6 +55,7 @@ const BrandSlider = () => {
     { logo: logo4 },
     { logo: logo5 },
     { logo: logo6 },
+    { logo: logo7 },
     { logo: logo8 },
     { logo: logo9 },
   ];

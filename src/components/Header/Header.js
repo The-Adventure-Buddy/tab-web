@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
-// import image1 from '../../assets/hiking.jpg';
-// import image2 from '../../assets/obstacle.jpg';
-// import image3 from '../../assets/Rope Climbing.jpg';
-// import image4 from '../../assets/tug of war.jpg';
-
-const images = [];//[image1, image2, image3, image4]
+import image1 from '../../assets/pic1.png';
+import image2 from '../../assets/pic2.png';
+import image3 from '../../assets/pic3.png';
+import image4 from '../../assets/pic4.png';
+import image5 from '../../assets/pic5.png';
+const images = [image1, image2, image3, image4, image5];//[image1, image2, image3, image4]
 
 const Header = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -13,7 +13,7 @@ const Header = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000); // Change image every 4 seconds
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 

@@ -10,7 +10,7 @@ const AdventureStart = () => {
                 <h1>The Adventure...</h1>
             </div>
             <div className="image-section">
-                <a href="https://linktr.ee" target="_blank" rel="noopener noreferrer">
+                <a href="https://linktr.ee/adventurebuddy01" target="_blank" rel="noopener noreferrer">
                     <img src={linktreeImg} alt="Linktree" className="linktree-image" />
                 </a>
             </div>

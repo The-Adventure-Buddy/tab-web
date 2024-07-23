@@ -34,11 +34,15 @@ body, html {
     transform: translate(0, 0) scale(0.2); /* Adjust scale to fit in header */
 }
 
+/* Hide class for logo */
+.hide {
+    opacity: 0; /* Hides the logo */
+}
+
 /* Content padding to account for fixed header */
 .content {
     padding-top: 80px; /* Space for the fixed header */
 }
-
 
 /* Mobile view adjustments */
 @media (max-width: 768px) {

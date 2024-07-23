@@ -28,11 +28,11 @@ body, html {
 }
 
 .navbar-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+    /*width: 100%;*/
+    /*max-width: 1200px;*/
 }
 
 .menu-toggle {
@@ -90,7 +90,8 @@ body, html {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 70px; /* Add margin for spacing */
+    margin-top: -10px;
+    margin-left: 77px; /* Add margin for spacing */
 }
 
 .nav-item .dropdown-menu {
