@@ -1,0 +1,48 @@
+.Activities {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-top: 120px; /* Adjust to avoid content hidden behind fixed header */
+}
+.Activities h1{
+    font-size: 2rem;
+    margin-bottom: 100px;
+}
+.lOgo {
+    width: 150px;
+    height: 120px;
+}
+
+.activities-grid {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    gap: 80px;
+    justify-content: center;
+}
+
+.activitys-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    /*width: calc((100% - 60px) / 3); !* Adjust width to fit three cards in a row *!*/
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+.activity-card p {
+    margin-top: 10px;
+    font-size: 14px;
+}

@@ -1,5 +1,6 @@
-/* src/RegistrationForm.css */
+/*!* src/RegistrationForm.css *!*/
 
+/* General Form Styling */
 .registration-form {
     width: 80%;
     margin: 0 auto;
@@ -12,23 +13,130 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1.1);
 }
 
-.registration-form h1 {
+/* Registerform.css */
+/* Add your existing styles here */
+
+/* Styling for error messages */
+.error {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Ensure form groups maintain consistent spacing */
+.form-group,
+.form-group-venue,
+.form-group-date,
+.form-group-camp,
+.form-group-fullname,
+.form-group-guardian,
+.form-group-blood,
+.form-group-dob,
+.form-group-age,
+.form-group-class,
+.form-group-section,
+.form-group-whatapp,
+.form-group-mobile,
+.form-group-address,
+.form-group-city,
+.form-group-state,
+.form-group-pincode,
+.form-group-aadhar,
+.form-group-gender,
+.form-group-camp,
+.form-group-address,
+.form-group-city,
+.form-group-state,
+.form-group-pincode,
+.form-group-disease,
+.form-group-agree {
+    margin-bottom: 15px;
+}
+
+/* Ensure input fields take full width */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Styling for form sections */
+.form-section {
+    margin-bottom: 30px;
+}
+
+.details {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Adjust layout for better visual appeal */
+.form-group-gender label,
+.form-group-gender input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.gender-group-gender {
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.upload {
+    display: block;
+}
+
+.btn button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: #0056b3;
+}
+
+/* Header Styling */
+.registration-form h1,
+.registration-form p {
     color: black;
     text-align: center;
 }
 
+.registration-form h1 {
+    margin-bottom: 10px;
+}
+
 .registration-form p {
-    color: black;
-    text-align: center;
     font-size: 14px;
 }
-.details{
+
+.details {
     font-size: 2rem;
     text-align: center;
 }
-.upload{
-    margin-left: 900px;
+
+/* Upload Section */
+.upload {
+    margin-left: 350%;
 }
+
+/* Form Sections */
 .form-section {
     margin-bottom: 20px;
 }
@@ -39,8 +147,17 @@
     padding: 10px;
     border-radius: 5px 5px 0 0;
     margin: 0;
+    width: 100%;
 }
 
+/* Profile Picture Styling */
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    margin-left: 900px;
+}
+
+/* Form Group Styling */
 .form-group {
     display: flex;
     align-items: center;
@@ -48,32 +165,175 @@
 }
 
 .form-group label {
-    /*flex: 1;*/
-    /*text-align: right;*/
     margin-right: 10px;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group input {
     flex: 2;
+    width: 150vh;
+    margin-left: 10px;
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-.form-group.gender-group {
-    flex-direction: row;
-    align-items: center;
+/* Specific Form Groups */
+.form-group-venue input {
+    width: 146vh;
+    margin-left: 70px;
+    padding: 5px;
 }
 
-.form-group.gender-group label {
-    flex: none;
+.form-group-date input {
+    margin-top: 20px;
+    margin-left: 80px;
+    padding: 5px;
+    width: 200px;
+}
+
+.form-group-date span {
+    margin-left: 50px;
+}
+
+.form-group-camp input {
+    width: 850px;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.form-group-fullname input {
+    width: 700px;
+    margin-left: 80px;
+    padding: 5px;
+    margin-top: -90px;
+}
+
+.form-group-guardian input {
+    width: 700px;
+    margin-left: 40px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.form-group-blood input {
+    width: 700px;
+    margin-left: 60px;
+    padding: 5px;
+}
+
+/* Gender Group Styling */
+.gender-group-gender {
+    margin-top: -30px;
+    margin-right: 500px;
+    padding: 5px;
+}
+
+.gender-group-gender input {
+    margin: 50px;
+}
+
+.form-group-dob {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.form-group-dob input {
+    width: 400px;
+    margin-left: 50px;
+}
+
+.form-group-age {
+    margin-top: 4px;
+    padding: 5px;
+}
+
+.form-group-age label {
+    margin-right: 125px;
+}
+
+.form-group-age input {
+    margin-right: 27px;
+}
+
+.form-group-class {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.form-group-class input {
+    width: 500px;
+    padding: 5px;
+    margin-left: 105px;
+}
+
+.form-group-section {
+    margin-top: 4px;
+    padding: 5px;
+}
+
+.form-group-section label {
+    margin-right: 100px;
+}
+
+.form-group-section input {
+    margin-right: 27px;
+}
+
+.form-group-whatapp {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.form-group-whatapp input {
+    width: 500px;
+    padding: 5px;
+    margin-left: 45px;
+}
+
+.form-group-mobile {
+    margin-top: 4px;
+    padding: 5px;
+}
+
+.form-group-mobile input {
+    margin-right: 27px;
+}
+
+.form-group-mobile label {
+    margin-right: 80px;
+}
+
+.form-group-address {
+    margin-top: 20px;
+}
+
+.form-group-address textarea {
+    width: 138vh;
+    margin-left: 150px;
+    margin-top: -20px;
+}
+
+.form-group-city {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.form-group-city input {
+    padding: 5px;
+    width: 500px;
+    margin-left: 111px;
+}
+
+.form-group-state {
+    margin-top: 4px;
+    padding: 5px;
+}
+
+.form-group-state label {
+    margin-right: 120px;
+}
+
+.form-group-state input {
     margin-right: 20px;
-}
-
-.form-group.gender-group input {
-    flex: none;
-    margin-right: 10px;
 }
 
 .profile-pic {
@@ -81,12 +341,33 @@
     margin: 10px 0;
 }
 
-.profile-pic img {
-    margin-top: -20px;
-    width: 120px;
-    height: 150px;
-    margin-left: 900px;
-    /*border-radius: 50%;*/
+.form-group-pincode {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.form-group-pincode input {
+    padding: 5px;
+    width: 500px;
+    margin-left: 80px;
+}
+
+.form-group-aadhar {
+    margin-top: 4px;
+    padding: 5px;
+}
+
+.form-group-aadhar label {
+    margin-right: 80px;
+}
+
+.form-group-aadhar input {
+    margin-right: 20px;
+}
+
+.disease input {
+    padding: 5px;
+    width: 170vh;
 }
 
 .agree-group {
@@ -114,4 +395,61 @@
 
 button:hover {
     background-color: #003366;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .registration-form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile-pic img {
+        margin-left: 0;
+    }
+
+    .form-group {
+        display: block;
+    }
+
+    .form-group input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group-venue input,
+    .form-group-date input,
+    .form-group-camp input,
+    .form-group-fullname input,
+    .form-group-guardian input,
+    .form-group-blood input,
+    .form-group-dob input,
+    .form-group-age input,
+    .form-group-class input,
+    .form-group-section input,
+    .form-group-whatapp input,
+    .form-group-mobile input,
+    .form-group-address textarea,
+    .form-group-city input,
+    .form-group-state input,
+    .form-group-pincode input,
+    .form-group-aadhar input,
+    .disease input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .agree-group {
+        flex-direction: column;
+    }
+
+    .btn button {
+        margin-left: 0;
+        width: 100%;
+    }
 }

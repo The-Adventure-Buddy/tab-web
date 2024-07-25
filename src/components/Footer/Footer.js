@@ -34,8 +34,8 @@ const Footer = () => {
               <li><a href="/contact">Contact Us</a></li>
               <li><a href="/about">About Us</a></li>
               <li><a href="/activities/schoolcamp">Epic Explorer</a></li>
-              <li><a href="/activities/outdoorcamp">Rising Wanderer</a></li>
-              <li><a href="/activities/adventureactivities">Master Pioneer</a></li>
+              <li><a href="/activities/adventureactivities">Rising Wanderer</a></li>
+              <li><a href="/activities/outdoorcamp">Master Pioneer</a></li>
 
 
             </ul>

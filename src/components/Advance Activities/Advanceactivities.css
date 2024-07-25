@@ -1,34 +1,42 @@
-/* AdventureActivities.css */
-.container {
-    width: 80%;
-    margin: 0 auto;
+.Rising {
     text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 200px;
 }
 
-.headers img {
-    width: 100px;
-    height: auto;
+.Rising h1 {
+    font-size: 5rem;
+    /*margin-top: -20px;*/
+    margin-bottom: 80px;
 }
-
-.headers h1 {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-.grid {
+.TripGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 2px;
-    margin-top: 20px;
+    grid-template-columns: repeat(3, 0fr);
+    gap: 200px;
+    justify-content: center;
 }
 
-.card {
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
+.Trips {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.1);
+    width: 200px;
+    height: 230px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.Trips:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.trip-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
