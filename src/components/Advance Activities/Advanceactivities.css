@@ -1,3 +1,4 @@
+/* General styles */
 .Rising {
     text-align: center;
     font-family: Arial, sans-serif;
@@ -6,9 +7,9 @@
 
 .Rising h1 {
     font-size: 5rem;
-    /*margin-top: -20px;*/
     margin-bottom: 80px;
 }
+
 .TripGrid {
     display: grid;
     grid-template-columns: repeat(3, 0fr);
@@ -39,4 +40,83 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Responsive design for large tablets and smaller screens */
+@media (max-width: 1024px) {
+    .Rising {
+        margin-top: 150px;
+    }
+
+    .Rising h1 {
+        font-size: 4rem;
+        margin-bottom: 60px;
+    }
+
+    .TripGrid {
+        grid-template-rows: repeat(2, 0fr);
+        gap: 50px;
+    }
+
+    .Trips {
+        width: 180px;
+        height: 210px;
+    }
+}
+
+/* Responsive design for medium tablets and smaller screens */
+@media (max-width: 768px) {
+    .Rising {
+        margin-top: 100px;
+    }
+
+    .Rising h1 {
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+
+    .TripGrid {
+        grid-template-rows: repeat(2, 0fr);
+        gap: 20px;
+    }
+
+    .Trips {
+        width: 160px;
+        height: 190px;
+    }
+}
+
+/* Additional responsive design for small screens */
+@media (max-width: 480px) {
+    .Rising {
+        margin-top: 50px;
+    }
+
+    .Rising h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .TripGrid {
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+
+    .Trips {
+        width: 100px;
+        height: 150px;
+    }
+}
+
+/* Additional responsive design for very small screens */
+@media (max-width: 320px) {
+    .Rising h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .Trips {
+        width: 120px;
+        height: 150px;
+    }
 }

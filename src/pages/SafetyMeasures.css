@@ -1,15 +1,14 @@
-
+/* General styles */
 .section {
     display: flex;
     width: 100%;
     padding: 10px 0;
     align-items: center;
-    /*border-bottom: 1px solid #ccc;*/
+    position: relative; /* Needed for the ::before pseudo-element */
 }
 
 .s {
     width: 30%;
-    /*text-align: right;*/
     margin-left: 150px;
     font-size: 35px;
     font-weight: bold;
@@ -32,13 +31,78 @@
     font-family: 'Monda';
 }
 
-
 /* Add a border in the middle */
 .section:before {
     content: '';
     position: absolute;
     width: 1px;
-    height: 20%;
+    height: 80%; /* Adjusted for better visibility */
     background: black;
     left: 30%;
+    top: 10%;
+}
+
+/* Responsive design for large tablets and smaller screens */
+@media (max-width: 1024px) {
+    .s {
+        margin-left: 100px;
+        font-size: 30px;
+    }
+
+    .section ul {
+        margin-right: 100px;
+    }
+
+    .section:before {
+        left: 25%;
+    }
+}
+
+/* Responsive design for medium tablets and smaller screens */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .s {
+        width: 100%;
+        margin-left: 0;
+        font-size: 28px;
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .section ul {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .section:before {
+        display: none; /* Hide the border on smaller screens */
+    }
+}
+
+/* Responsive design for small screens */
+@media (max-width: 480px) {
+    .s {
+        font-size: 24px;
+    }
+
+    .section ul li {
+        font-size: 1rem;
+    }
+}
+
+/* Additional responsive design for very small screens */
+@media (max-width: 320px) {
+    .s {
+        font-size: 20px;
+    }
+
+    .section ul li {
+        font-size: 0.9rem;
+    }
 }

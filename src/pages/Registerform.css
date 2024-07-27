@@ -4,7 +4,7 @@
 .registration-form {
     width: 80%;
     margin: 0 auto;
-    font-family: Arial, sans-serif;
+    font-family: "Monda";
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
@@ -55,7 +55,7 @@
 }
 
 /* Ensure input fields take full width */
-input[type="text"],
+ input[type="text"],
 input[type="date"],
 input[type="number"],
 textarea {

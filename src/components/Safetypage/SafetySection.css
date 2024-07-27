@@ -9,7 +9,8 @@
     margin: 0 auto;
     font-family: Arial, sans-serif;
 }
-.safety-content p{
+
+.safety-content p {
     font-size: 1.2rem;
     font-family: 'Monda';
     margin-right: 10%;
@@ -20,11 +21,6 @@
     width: 100%;
     margin-bottom: 20px;
     font-family: 'Monda';
-}
-safety-content p{
-    font-size: 8rem;
-}
-.headline {
     font-size: 8rem; /* Adjusted to fit the design better */
     color: black;
     margin-right: 20px;
@@ -49,3 +45,81 @@ safety-content p{
     height: 100vh; /* Maintain aspect ratio */
 }
 
+/* Media Queries for Responsive Design */
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .headline {
+        font-size: 8rem;
+    }
+
+    .safety-content p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .headline {
+        font-size: 6rem;
+    }
+
+    .safety-content p {
+        font-size: 1rem;
+    }
+
+    .safety-image img {
+        width: 80vh;
+        height: 80vh;
+    }
+
+    .safety-highlight {
+        margin-left: 40px;
+    }
+}
+
+/* Small devices (phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 767px) {
+    .headline {
+        font-size: 4rem;
+    }
+
+    .safety-content p {
+        font-size: 0.9rem;
+    }
+
+    .safety-image img {
+        width: 20vh;
+        height: 20vh;
+    }
+
+    .safety-highlight {
+        margin-left: 20px;
+    }
+}
+
+/* Extra small devices (phones, less than 600px) */
+@media (max-width: 599px) {
+    .headline {
+        font-size: 3rem;
+    }
+
+    .safety-content p {
+        font-size: 0.8rem;
+    }
+
+    .safety-image img {
+        width: 30vh;
+        height: 35vh;
+        margin-top: 140px; /* Adjust as needed */
+    }
+
+    .safety-highlight {
+        margin-left: 10px;
+    }
+
+    .safety-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

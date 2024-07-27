@@ -5,6 +5,7 @@ body, html {
     height: 200vh; /* Make the page tall enough to scroll */
 }
 
+/* Navbar styles */
 .navbar {
     display: flex;
     justify-content: center;
@@ -19,6 +20,7 @@ body, html {
     transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
     opacity: 0;
     z-index: 1000; /* Ensure navbar is above other content */
+    width: 80%;
 }
 
 .navbar.visible {
@@ -28,11 +30,10 @@ body, html {
 }
 
 .navbar-container {
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: space-between;*/
-    /*width: 100%;*/
-    /*max-width: 1200px;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .menu-toggle {
@@ -92,7 +93,7 @@ body, html {
     font-size: 16px;
     cursor: pointer;
     margin-top: -10px;
-    margin-left: 77px; /* Add margin for spacing */
+    margin-left: 20px; /* Add margin for spacing */
 }
 
 .nav-item .dropdown-menu {
@@ -121,11 +122,18 @@ body, html {
     color: #6E9B40;
 }
 
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 1024px) {
+    .navbar {
+        width: 90%; /* Adjust width for tablets */
+    }
+}
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         padding: 10px;
-        width: 50%; /* Adjust width for mobile view */
+        width: 80%; /* Adjust width for mobile view */
         transform: translateX(-50%) translateY(10%); /* Adjust position for mobile view */
     }
 
@@ -158,5 +166,37 @@ body, html {
         width: 100%;
         text-align: center;
         margin: 10px 0; /* Adjust margin for mobile view */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        width: 90%; /* Further adjust width for smaller screens */
+        padding: 5px;
+    }
+
+    .nav-item a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .login-button {
+        font-size: 14px; /* Adjust button font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar {
+        width: 100%; /* Further adjust width for very small screens */
+        padding: 5px;
+    }
+
+    .nav-item a {
+        font-size: 14px; /* Adjust font size for very small screens */
+    }
+
+    .login-button {
+        font-size: 12px; /* Adjust button font size for very small screens */
+        padding: 6px 12px; /* Adjust padding for very small screens */
     }
 }

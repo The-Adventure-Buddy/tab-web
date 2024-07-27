@@ -21,30 +21,30 @@ body, html {
 }
 
 /* Styling for the contact form */
-.contact-form {
+#contact-form {
     margin-bottom: 10%;
     width: 45%;
 }
 
-.contact-form h2 {
+#contact-form h2 {
     font-family: 'Monda';
     font-size: 2.5rem;
     color: #2e9cca;
 }
 
-.contact-form p {
+#contact-form p {
     font-size: 1.5rem;
     font-family: 'Monda';
     margin-bottom: 20px;
 }
 
-.contact-form form {
+#contact-form form {
     display: flex;
     flex-direction: column;
 }
 
-.contact-form input,
-.contact-form textarea {
+#contact-form input,
+#contact-form textarea {
     margin-bottom: 15px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -54,13 +54,13 @@ body, html {
     transition: border-color 0.3s ease; /* Smooth transition for border color */
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+#contact-form input:focus,
+#contact-form textarea:focus {
     border-color: #6E9B40; /* Change border color to green on focus */
     outline: none; /* Remove default focus outline */
 }
 
-.contact-form button {
+#contact-form button {
     padding: 10px;
     background-color: #2e9cca;
     color: #fff;
@@ -69,27 +69,27 @@ body, html {
     cursor: pointer;
 }
 
-.contact-form button:hover {
+#contact-form button:hover {
     background-color: #2e9cca;
 }
 
 /* Styling for the contact image and info */
-.contact-image {
+#contact-image {
     width: 43%;
     text-align: center;
 }
 
-.contact-image img {
+#contact-image img {
     max-width: 100%;
     height: auto;
 }
 
-.contact-info {
+#contact-info {
     margin-top: 20px;
     font-size: 14px;
 }
 
-.contact-info p {
+#contact-info p {
     margin: 5px 0;
 }
 
@@ -101,25 +101,25 @@ body, html {
         align-items: center;
     }
 
-    .contact-form, .contact-image {
+    #contact-form, .contact-image {
         width: 100%;
         margin-bottom: 20px;
     }
 
-    .contact-form {
+    #contact-form {
         order: 1; /* Ensure contact form appears first */
     }
 
-    .contact-image {
+    #contact-image {
         order: 2; /* Ensure contact image appears second */
     }
 
-    .contact-form input,
-    .contact-form textarea {
+    #contact-form input,
+    #contact-form textarea {
         padding: 15px;
     }
 
-    .contact-form button {
+    #contact-form button {
         padding: 15px;
     }
 }

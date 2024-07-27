@@ -41,11 +41,11 @@ const Navbar = () => {
                 <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
                     <li className="nav-item"><a href="/">Home</a></li>
                     <li className="nav-item dropdown" onClick={toggleDropdown}>
-                        <a href="/">Activities</a>
+                        <a href="/" >Activities</a>
                         <ul className={`dropdown-menu ${dropdownOpen ? 'open' : ''}`}>
                             <li><a href="/activities/schoolcamp" onClick={(e) => e.stopPropagation()}>Epic Explorer</a>
                                                </li>
-                            <li><a href=" /activities/adventureactivities " onClick={(e) => e.stopPropagation()}>Rising
+                            <li><a href=" /activities/rising" onClick={(e) => e.stopPropagation()}>Rising
                                 Wanderer</a></li>
                             <li><a href="/activities/outdoorcamp" onClick={(e) => e.stopPropagation()}>Master
                                 Pioneer</a></li>

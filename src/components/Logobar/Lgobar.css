@@ -25,9 +25,9 @@
 /* Responsive design for tablets and smaller screens */
 @media (max-width: 1024px) {
     .logo-bar {
-        flex-direction: column; /* Stack items vertically */
-        gap: 50px; /* Reduce gap for smaller screens */
-        padding: 15px; /* Adjust padding for smaller screens */
+        flex-direction: row; /* Stack items vertically */
+        gap: 1px; /* Reduce gap for smaller screens */
+        padding: 2px; /* Adjust padding for smaller screens */
     }
 
     .brand-logo {
@@ -39,9 +39,9 @@
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .logo-bar {
-        flex-direction: column; /* Stack items vertically */
-        gap: 30px; /* Further reduce gap */
-        padding: 10px; /* Reduce padding */
+        flex-direction: row; /* Stack items vertically */
+        gap: -20px; /* Further reduce gap */
+        padding: 1px; /* Reduce padding */
     }
 
     .brand-logo {
@@ -53,12 +53,13 @@
 /* Additional responsive design for very small screens */
 @media (max-width: 480px) {
     .logo-bar {
-        gap: 20px; /* Further reduce gap */
+        flex-direction: row;
+        gap: -1px; /* Further reduce gap */
         padding: 5px; /* Reduce padding */
     }
 
     .brand-logo {
-        max-height: 40px; /* Further reduce logo height */
+        max-height: 20px; /* Further reduce logo height */
         max-width: 80px; /* Further reduce logo width */
     }
 }

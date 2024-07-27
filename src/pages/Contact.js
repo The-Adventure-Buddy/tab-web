@@ -7,7 +7,7 @@ const ContactPage = () => {
 <>
         <div className="contact-container">
 
-            <div className="contact-form">
+            <div id="contact-form">
                 <h2>Get in touch</h2>
                 <p>How can we support you? Just let us know!</p>
                 <form>

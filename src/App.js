@@ -29,7 +29,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/activities/schoolcamp" element={<SchoolCamps />} />
           <Route path="/activities/outdoorcamp" element={<Outdoorcamp />} />
-            <Route path="" element={<Advanceactivities />} />
+            <Route path="/activities/rising" element={<Advanceactivities />} />
           <Route path="/safety" element={<SafetySection />} />
           <Route path="/register" element={<Registerform />} />
           <Route path="/checkform" element={<CheckFrom />} />
